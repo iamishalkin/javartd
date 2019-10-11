@@ -9,7 +9,8 @@ Welcome to javartd's documentation!
 .. toctree::
    :maxdepth: 2
 
-   packages
+   first_step
+   second_step
 
 
 
