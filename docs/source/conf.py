@@ -15,8 +15,11 @@
 # sys.path.insert(0, os.path.abspath('.'))
 
 import subprocess
+from pathlib import Path
+doc_path = str(Path(__file__).resolve().parent)
+src_path = str(Path(__file__).resolve().parents[2].joinpath('src'))
 
-subprocess.call('javasphinx-apidoc -o ./ ../src/ -f --title="Java Documentation"')
+subprocess.call(f'javasphinx-apidoc -o {doc_path} {src_path} -f --title="Java Documentation"')
 
 
 # -- Project information -----------------------------------------------------
