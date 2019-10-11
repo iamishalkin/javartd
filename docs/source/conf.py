@@ -16,7 +16,7 @@
 
 import subprocess
 
-subprocess.call('javasphinx-apidoc -o ./ ../../src/ -f --title="Java Documentation"')
+subprocess.call('javasphinx-apidoc -o ./ ../src/ -f --title="Java Documentation"')
 
 
 # -- Project information -----------------------------------------------------
